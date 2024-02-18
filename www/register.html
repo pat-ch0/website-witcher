@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="register.css" />
+        <title>Register</title>
+    </head>
+    <body>
+        <nav class="taskbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img id="logo" src="logo2.jpg" alt="Loup"/>
+                </a>
+            </div>
+            <div class="runesG">
+                <img id="Aard" src="aardb&w.jpg" alt="Aard"/>
+                <a class="menuLink" href="aard.html">
+                    <div class="rune" onmouseover="Aard.src='AArd.jpg';" onmouseout="Aard.src='aardb&w.jpg';">Aard</div>
+                </a>
+                <img id="axii" src="axiib&w.jpg" alt="Axii"/>
+                <a class="menuLink" href="axii.html">
+                    <div class="rune" onmouseover="axii.src='axii.jpg';" onmouseout="axii.src='axiib&w.jpg';">Axii</div>
+                </a>
+                <img id="igni" src="ignib&w.jpg" alt="Igni"/>
+                <a class="menuLink" href="igni.html">
+                    <div class="rune" onmouseover="igni.src='igni.jpg';" onmouseout="igni.src='ignib&w.jpg';">Igni</div>
+                </a>
+                <img id="quen" src="quenb&w.jpg" alt="Quen"/>
+                <a class="menuLink" href="quen.html">
+                    <div class="rune" onmouseover="quen.src='quen.jpg';" onmouseout="quen.src='quenb&w.jpg';">Quen</div>
+                </a>
+                <img id="yrden" src="yrdenb&w.jpg" alt="Yrden"/>
+                <a class="menuLink" href="yrden.html">  
+                    <div class="rune" onmouseover="yrden.src='yrden.jpg';" onmouseout="yrden.src='yrdenb&w.jpg';">Yrden</div>
+                </a>
+            </div>
+            <div class="Id">
+                <a class="Id" id="login" href="login.html">
+                    Login
+                </a>
+                <a class="Id" href="register.html">
+                    Register
+                </a>
+                <a href="chatbox.html" id="Chatbox">Chatbox</a>
+            </div>
+        </nav>
+        
+        <div class="outerContainer">
+            <div class="header"><h1>Formulaire d'inscription</h1></div>
+            <div class="innerContainer">
+                <form name="registerform" method="post" action="htbin/register.py">
+                    <ul>
+                        <li>
+                            <label for="firstname">Prénom :</label>
+                            <input type="text" name="firstname" id="firstname" onkeyup="validate()" autofocus> <div id="errFirst"></div>
+                        </li>
+                        <li>
+                            <label for="lastname">Nom :</label>
+                            <input type="text" name="lastname" id="lastname" onkeyup="validate()"> <div id="errLast"></div>
+                        </li>
+                        <li>
+                            <label for="useremail">E-mail :</label>
+                            <input type="text" name="useremail" id="useremail" onkeyup="validate()"> <div id="errEmail"></div>
+                        </li>
+                        <li>
+                            <label for="birthdate">Date de naissance (facultative) :</label>
+                            <input type="text" name="birthdate" id="birthdate" placeholder="jj/mm/aaaa" onkeyup="validate()"> <div id="errBdate"></div>
+                        </li>
+                        <li>
+                            <label for="username">Nom d'utilisateur :</label>
+                            <input type="text" name="username" id="username" onkeyup="validate()"><div id="errUname"></div>
+                        </li>
+                        <li>
+                            <label for="userpwd">Mot de passe :</label>
+                            <input type="password" name="userpwd" id="userpwd" onkeyup="validate()"> <div id="errPwd"></div>
+                        </li>
+                        <li>
+                            <input type="submit" value="S'inscrire" id="submit" onclick="validate()"><div id="errFinal"></div>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <script src="register.js" defer></script>
+    </body>
+</html>

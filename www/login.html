@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="login.css" />
+        <title>Login</title>
+    </head>
+    <body>
+        <nav class="taskbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img id="logo" src="logo2.jpg" alt="Loup"/>
+                </a>
+            </div>
+            <div class="runesG">
+                <img id="Aard" src="aardb&w.jpg" alt="Aard"/>
+                <a class="menuLink" href="aard.html">
+                    <div class="rune" onmouseover="Aard.src='AArd.jpg';" onmouseout="Aard.src='aardb&w.jpg';">Aard</div>
+                </a>
+                <img id="axii" src="axiib&w.jpg" alt="Axii"/>
+                <a class="menuLink" href="axii.html">
+                    <div class="rune" onmouseover="axii.src='axii.jpg';" onmouseout="axii.src='axiib&w.jpg';">Axii</div>
+                </a>
+                <img id="igni" src="ignib&w.jpg" alt="Igni"/>
+                <a class="menuLink" href="igni.html">
+                    <div class="rune" onmouseover="igni.src='igni.jpg';" onmouseout="igni.src='ignib&w.jpg';">Igni</div>
+                </a>
+                <img id="quen" src="quenb&w.jpg" alt="Quen"/>
+                <a class="menuLink" href="quen.html">
+                    <div class="rune" onmouseover="quen.src='quen.jpg';" onmouseout="quen.src='quenb&w.jpg';">Quen</div>
+                </a>
+                <img id="yrden" src="yrdenb&w.jpg" alt="Yrden"/>
+                <a class="menuLink" href="yrden.html">  
+                    <div class="rune" onmouseover="yrden.src='yrden.jpg';" onmouseout="yrden.src='yrdenb&w.jpg';">Yrden</div>
+                </a>
+            </div>
+            <div class="Id">
+                <a class="Id" href="login.html" id="login">
+                    Login
+                </a>
+                <a class="Id" href="register.html">
+                    Register
+                </a>
+                <a href="chatbox.html" id="Chatbox">Chatbox</a>
+            </div>
+        </nav>
+
+        <div class="outerContainer">
+            <div class="header"><h1>Connexion</h1></div>
+            <div class="innerContainer">
+                <form name="login" method="post" action="htbin/login.py">
+                    <ul>
+                        <li>
+                            <label for="username">Nom d'utilisateur :</label>
+                            <input type="text" name="username" id="username">
+                        </li>
+                        <li>
+                            <label for="userpwd">Mot de passe :</label>
+                            <input type="password" name="userpwd" id="userpwd"> <div id="password"></div>
+                        </li>
+                        <li>
+                            <input type="submit" value="Se connecter" name="submit">
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <script src="login.js" defer></script>
+    </body>
+</html>

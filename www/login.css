@@ -1,0 +1,114 @@
+.outerContainer {
+  position: relative;
+  top: 7em;
+  border: 1px solid;
+  width: 400px;
+  height: 350px;
+  margin: 10px auto;
+  background:#c8f3f1;
+}
+.header {
+  text-align: center;
+  border: 1px solid;
+  margin: 5px;
+  padding: 5px;
+  background:#4c89e3;
+}
+.innerContainer{
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+
+li{
+  list-style:none;
+  padding: 5px;
+  margin: 10px;
+}
+label{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#logo
+{
+  width: 50px;
+  height: 50px; 
+}
+
+#Aard
+{
+  width: 45px;
+  height: 35px;
+}
+
+#axii
+{
+  width: 45px;
+  height: 35px;
+}
+
+#igni
+{
+  width: 45px;
+  height: 35px;
+}
+
+#quen{
+  width: 45px;
+  height: 35px;
+}
+
+#yrden{
+  width: 45px;
+  height: 30px;
+}
+
+#body
+{
+  margin: 0px;
+}
+
+.taskbar{
+  top: 0;
+  background: black;
+  color: white;
+  display: flex;
+  height: 5.3em;
+  position: fixed;
+  z-index: 100;
+  left:0;
+  right:0;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+.Id{
+  text-decoration: none;
+  color: white;
+  margin-right: 1em;
+}
+
+.runesG{
+  display: flex;
+  align-items: center;
+}
+
+.rune{
+  width: 80px;
+}
+
+.menuLink
+{
+  color: white;
+  text-decoration: none;
+}
+
+#paraD{
+  padding-top: 8em;
+}
+
+#Chatbox{
+	color:white;
+	text-decoration: none;
+}

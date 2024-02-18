@@ -1,0 +1,178 @@
+table
+{
+	border-collapse: collapse;
+}
+
+#logo
+{
+	width: 50px;
+	height: 50px;	
+}
+
+#Aard
+{
+	width: 45px;
+	height: 35px;
+}
+
+#axii
+{
+	width: 45px;
+	height: 35px;
+}
+
+#igni
+{
+	width: 45px;
+	height: 35px;
+}
+
+#quen{
+	width: 45px;
+	height: 35px;
+}
+
+#yrden{
+	width: 45px;
+	height: 30px;
+}
+
+#body
+{
+	margin: 0px;
+}
+
+#Jaskier_present{
+	float: left;
+	position: relative;
+	width: 56%;
+	height: 56%;
+	border-bottom: groove;
+	animation-name: example;
+  	animation-duration: 1200s;
+	z-index:2;	
+}
+
+@keyframes example {
+	0%   {left:0px; top:0px;}
+	1%  {left:425px; top:400px;}
+  }
+
+h1{
+	font-size: 1.5em;
+	padding-left: 10em;
+}
+
+h1 > strong{
+	font-size: 1.4em;
+}
+
+td{
+	padding-left: 1em;
+}
+
+.tableau{
+	vertical-align: top;
+}
+
+#RoyaumeMajeurs{
+	float:  left;
+	margin-left:  5em;
+}
+
+#qualiteGeral{
+	list-style: none;
+}
+
+#Chatbox{
+	color:white;
+	text-decoration: none;
+}
+
+.taskbar{
+	top: 0;
+	background: black;
+	color: white;
+	display: flex;
+	height: 5.3em;
+	position: fixed;
+	z-index: 100;
+	left:0;
+	right:0;
+	justify-content: space-between;
+	align-items: center;	
+}
+
+.Id{
+	text-decoration: none;
+	color: white;
+	margin-right: 1em;
+}
+
+.runesG{
+	display: flex;
+	align-items: center;
+}
+
+.rune{
+	width: 80px;
+}
+
+.menuLink
+{
+	color: white;
+	text-decoration: none;
+}
+
+section{
+	padding: 1em;
+	width: 50em;
+	text-align: justify;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+}
+
+body{
+	position: relative;
+	top: 20mm;
+	background-color: rgb(226, 226, 226);
+	font-size: 1.3em;
+}
+
+a{
+    color: black;
+}
+
+section a:visited{
+    color: rgb(114, 1, 114); 
+}
+
+p a:hover{
+    color: blue;
+    transition: color 1s;
+}
+
+h1 a:hover{
+    color: blue;
+    transition: color 1s;
+}
+
+#Intro{
+	top: 2mm;
+	position: relative;
+	clear: both;
+}
+
+footer{
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+	background-color: rgb(19, 31, 31);
+	color: grey;
+	font-size: small;
+	width: 75em;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
